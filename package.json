@@ -1,0 +1,10 @@
+{
+  "name": "js.org.json",
+  "version": "1.0.0",
+  "description": "js.org subdomains to a json file",
+  "main": "script/build.js",
+  "repository": "https://github.com/raikasdev/js.org.json",
+  "author": "Roni Äikäs",
+  "license": "MIT",
+  "private": false
+}
