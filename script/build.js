@@ -28,4 +28,6 @@ download('https://raw.githubusercontent.com/js-org/js.org/master/cnames_active.j
     const data = require('../tmp_data.js')
     fs.writeFileSync('output/cnames_active.json', JSON.stringify(data.cnames_active, null, 2));
     fs.writeFileSync('output/subdomains_registered.json', JSON.stringify(Object.keys(data.cnames_active).map(value => `${value}.js.org`), null, 2));
+    fs.writeFileSync('output/cnames_active.min.json', JSON.stringify(data.cnames_active));
+    fs.writeFileSync('output/subdomains_registered.min.json', JSON.stringify(Object.keys(data.cnames_active).map(value => `${value}.js.org`)));
 })
